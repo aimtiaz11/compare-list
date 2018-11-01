@@ -1,6 +1,6 @@
 # compare-list
 
-SimpleGroovyscripttocompare2files.
+A simple groovy script to compare 2 lists to display the common items and mismatches.
 
 
 ## Running
