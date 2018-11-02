@@ -4,7 +4,7 @@ A simple groovy script to compare 2 lists to display the common items and mismat
 
 
 ## Running
-Populatetheinput-file1.txtandinput-file2.txtandrun:`groovycompareList.groovy`
+Populate the input-file1.txt and input-file2.txt and run:`groovycompareList.groovy`.
 
 ## Sample output
 
