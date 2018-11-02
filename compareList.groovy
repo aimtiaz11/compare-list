@@ -1,11 +1,11 @@
 def sourceList = []
 new File( 'input-file1.txt' ).eachLine { line ->
-    sourceList << line
+    sourceList << line.trim()
 }
 
 def targetList = []
 new File( 'input-file2.txt' ).eachLine { line ->
-    targetList << line
+    targetList << line.trim()
 }
 
 List diff1 = (sourceList-targetList)
