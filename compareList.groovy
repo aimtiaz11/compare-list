@@ -1,29 +1,29 @@
-defsourceList=[]
-newFile('input-file1.txt').eachLine{line->
-sourceList<<line
+def sourceList = []
+new File( 'input-file1.txt' ).eachLine { line ->
+    sourceList << line
 }
 
-deftargetList=[]
-newFile('input-file2.txt').eachLine{line->
-targetList<<line
+def targetList = []
+new File( 'input-file2.txt' ).eachLine { line ->
+    targetList << line
 }
 
-Listdiff1=(sourceList-targetList)
-Listdiff2=(targetList-sourceList)
-Listdiff3=sourceList.intersect(targetList)
+List diff1 = (sourceList-targetList)
+List diff2 = (targetList-sourceList)
+List diff3 = sourceList.intersect(targetList)
 
-println"TotalinsourceList:${sourceList.size}"
-println"TotalintargetList:${targetList.size}"
-
-
-println"****ItemsinsourceListnotintargetListlist:${diff1.size}****"
-diff1.each{println"${it}\n"}
+println "Total in sourceList: ${sourceList.size}"
+println "Total in targetList: ${targetList.size}"
 
 
-println"****ItemsintargetListnotinsourceListlist:${diff2.size}****"
-diff2.each{println"${it}\n"}
+println "**** Items in sourceList not in targetList list: ${diff1.size} ****"
+diff1.each { println "${it} \n" }
+
+
+println "**** Items in targetList not in sourceList list: ${diff2.size} ****"
+diff2.each { println "${it} \n" }
 
 
 
-println"*****commonitems*****"
-diff3.each{println"${it}\n"}
+println "***** common items *****"
+diff3.each { println "${it} \n" }
