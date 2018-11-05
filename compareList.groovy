@@ -25,5 +25,5 @@ diff2.each { println "${it} \n" }
 
 
 
-println "***** common items *****"
+println "***** Common items: ${diff3.size} *****"
 diff3.each { println "${it} \n" }
